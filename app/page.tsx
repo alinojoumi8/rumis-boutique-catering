@@ -6,13 +6,14 @@ import GalleryGrid from "@/components/GalleryGrid";
 import { FadeIn, Reveal } from "@/components/Motion";
 import Section from "@/components/Section";
 import { missionCopy, packages, site } from "@/data/site";
+import { imagePath } from "@/lib/image-path";
 
 export default function HomePage() {
   return (
     <main>
       <section className="relative min-h-screen overflow-hidden bg-plum text-white">
         <Image
-          src="/images/high-tea-hero.png"
+          src={imagePath("/images/high-tea-hero.png")}
           alt="Elegant high tea table with vintage china, pastries, canapés, and flowers"
           fill
           priority
@@ -85,7 +86,9 @@ export default function HomePage() {
               >
                 <div className="relative h-80">
                   <Image
-                    src={eventPackage.id === "high-tea" ? "/images/high-tea-detail.png" : "/images/cocktail-canapes.png"}
+                    src={imagePath(
+                      eventPackage.id === "high-tea" ? "/images/high-tea-detail.png" : "/images/cocktail-canapes.png"
+                    )}
                     alt={`${eventPackage.name} placeholder catering image`}
                     fill
                     sizes="(min-width: 768px) 50vw, 100vw"

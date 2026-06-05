@@ -5,11 +5,12 @@ import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import Image from "next/image";
 import { useEffect, useMemo, useState } from "react";
 import { galleryCaptions } from "@/data/site";
+import { imagePath } from "@/lib/image-path";
 
 const imageCycle = [
-  "/images/high-tea-detail.png",
-  "/images/cocktail-canapes.png",
-  "/images/high-tea-hero.png"
+  imagePath("/images/high-tea-detail.png"),
+  imagePath("/images/cocktail-canapes.png"),
+  imagePath("/images/high-tea-hero.png")
 ];
 
 export default function GalleryGrid({ preview = false }: { preview?: boolean }) {

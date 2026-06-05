@@ -7,6 +7,7 @@ import { FormEvent, useEffect, useMemo, useState } from "react";
 import TeaScene from "@/components/3d/LazyTeaScene";
 import { otherServices, packages, pricing, teas, type PackageId } from "@/data/site";
 import { calculateEventEstimate, formatCurrency } from "@/lib/estimate";
+import { imagePath } from "@/lib/image-path";
 
 const steps = ["Package", "Menu", "Teas", "Guests", "Estimate"] as const;
 
@@ -355,7 +356,9 @@ function PackageStep({
             >
               <div className="relative h-64">
                 <Image
-                  src={eventPackage.id === "high-tea" ? "/images/high-tea-detail.png" : "/images/cocktail-canapes.png"}
+                  src={imagePath(
+                    eventPackage.id === "high-tea" ? "/images/high-tea-detail.png" : "/images/cocktail-canapes.png"
+                  )}
                   alt={`${eventPackage.name} placeholder catering image`}
                   fill
                   sizes="(min-width: 768px) 40vw, 100vw"
@@ -409,7 +412,7 @@ function MenuStep({
             >
               <div className="relative h-28">
                 <Image
-                  src={packageId === "high-tea" ? "/images/high-tea-detail.png" : "/images/cocktail-canapes.png"}
+                  src={imagePath(packageId === "high-tea" ? "/images/high-tea-detail.png" : "/images/cocktail-canapes.png")}
                   alt={`${item.name} placeholder image`}
                   fill
                   sizes="(min-width: 1280px) 25vw, 50vw"

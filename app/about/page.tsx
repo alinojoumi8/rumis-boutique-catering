@@ -4,6 +4,7 @@ import TeaScene from "@/components/3d/LazyTeaScene";
 import { Reveal } from "@/components/Motion";
 import Section from "@/components/Section";
 import { includedItems, missionCopy } from "@/data/site";
+import { imagePath } from "@/lib/image-path";
 
 export const metadata: Metadata = {
   title: "About",
@@ -25,7 +26,7 @@ export default function AboutPage() {
           <Reveal delay={0.1}>
             <div className="relative aspect-[4/5] overflow-hidden rounded-[8px] shadow-petal">
               <Image
-                src="/images/high-tea-hero.png"
+                src={imagePath("/images/high-tea-hero.png")}
                 alt="High tea table with vintage china and flowers"
                 fill
                 sizes="(min-width: 768px) 50vw, 100vw"
