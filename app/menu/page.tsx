@@ -10,19 +10,19 @@ export const metadata: Metadata = {
 
 export default function MenuPage() {
   return (
-    <main className="bg-paper pt-28">
+    <main className="bg-atelier pt-28 text-white">
       <Section className="pb-10 pt-16 md:pt-20">
         <div className="mx-auto max-w-4xl text-center">
           <h1 className="text-balance font-serif text-5xl font-semibold leading-tight sm:text-6xl md:text-7xl">
             Build your event
           </h1>
-          <p className="mt-5 text-lg leading-8 text-plum/68">
+          <p className="mt-5 text-lg leading-8 text-white/70">
             Assemble a custom catering request for High Tea or Cocktail Party service. This is a quote flow, not checkout:
             no payment is collected here.
           </p>
         </div>
       </Section>
-      <Section className="pt-6">
+      <Section className="bg-ivory pt-6 text-plum">
         <EventBuilder />
       </Section>
     </main>

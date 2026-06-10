@@ -29,21 +29,21 @@ export default function Header() {
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         transparent
           ? "bg-transparent text-white"
-          : "border-b border-gold/20 bg-ivory/92 text-plum shadow-sm backdrop-blur-xl"
+          : "border-b border-gold/20 bg-ink/88 text-white shadow-sm backdrop-blur-xl"
       }`}
     >
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 md:px-8">
         <Link href="/" className="group flex items-center gap-3" aria-label={`${site.name} home`}>
           <span
             className={`grid size-11 place-items-center rounded-full border text-xl font-semibold transition ${
-              transparent ? "border-white/50 bg-white/10" : "border-gold/40 bg-lilac/50"
+              transparent ? "border-white/50 bg-white/10" : "border-gold/45 bg-lilac/15 text-lilac"
             }`}
           >
             R
           </span>
           <span className="leading-none">
             <span className="block font-serif text-2xl font-semibold">Rumi's</span>
-            <span className={`block text-xs uppercase tracking-[0.16em] ${transparent ? "text-white/78" : "text-plum/62"}`}>
+            <span className={`block text-xs uppercase tracking-[0.16em] ${transparent ? "text-white/78" : "text-white/58"}`}>
               Boutique Catering
             </span>
           </span>
@@ -57,7 +57,7 @@ export default function Header() {
                 key={item.href}
                 href={item.href}
                 className={`text-sm font-bold transition hover:text-mulberry focus-visible:rounded-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 ${
-                  active ? "text-mulberry" : transparent ? "text-white/88" : "text-plum/74"
+                  active ? "text-lilac" : transparent ? "text-white/88" : "text-white/74"
                 }`}
               >
                 {item.label}
@@ -71,8 +71,8 @@ export default function Header() {
             href="/menu"
             className={`rounded-full px-5 py-3 text-sm font-extrabold transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 ${
               transparent
-                ? "bg-white text-plum shadow-float hover:bg-lilac"
-                : "bg-plum text-white shadow-sm hover:bg-mulberry"
+                ? "bg-lilac text-plum shadow-float hover:bg-white"
+                : "bg-lilac text-plum shadow-sm hover:bg-white"
             }`}
           >
             Build Your Event
@@ -83,7 +83,7 @@ export default function Header() {
           type="button"
           onClick={() => setOpen((value) => !value)}
           className={`grid size-11 place-items-center rounded-full border md:hidden ${
-            transparent ? "border-white/50 bg-white/10" : "border-gold/30 bg-porcelain"
+            transparent ? "border-white/50 bg-white/10" : "border-gold/30 bg-white/10"
           }`}
           aria-expanded={open}
           aria-controls="mobile-navigation"
@@ -96,7 +96,7 @@ export default function Header() {
       {open ? (
         <nav
           id="mobile-navigation"
-          className="border-t border-gold/20 bg-ivory px-5 py-5 text-plum shadow-petal md:hidden"
+          className="border-t border-gold/20 bg-ink px-5 py-5 text-white shadow-petal md:hidden"
           aria-label="Mobile navigation"
         >
           <div className="flex flex-col gap-2">
@@ -104,7 +104,7 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="rounded-xl px-4 py-3 text-base font-bold hover:bg-lilac/45 focus-visible:outline focus-visible:outline-2 focus-visible:outline-mulberry"
+                className="rounded-xl px-4 py-3 text-base font-bold hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-lilac"
               >
                 {item.label}
               </Link>

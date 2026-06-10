@@ -12,14 +12,14 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <main className="bg-paper pt-28">
+    <main className="bg-atelier pt-28">
       <Section className="pt-16 md:pt-20">
         <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_360px]">
           <Reveal>
-            <h1 className="text-balance font-serif text-5xl font-semibold leading-tight sm:text-6xl md:text-7xl">
+            <h1 className="text-balance font-serif text-5xl font-semibold leading-tight text-white sm:text-6xl md:text-7xl">
               Request a Quote
             </h1>
-            <p className="mt-5 max-w-2xl text-lg leading-8 text-plum/68">
+            <p className="mt-5 max-w-2xl text-lg leading-8 text-white/70">
               Tell Rumi's about the date, guest count, event style, and any menu details you already have in mind.
             </p>
             <div className="mt-8">

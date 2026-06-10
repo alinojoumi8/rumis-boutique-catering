@@ -17,7 +17,7 @@ html {
 
 body {
   min-height: 100vh;
-  background: #fff9f1;
+  background: #171018;
   color: #342033;
   letter-spacing: 0;
   text-rendering: optimizeLegibility;
@@ -46,6 +46,60 @@ select {
 .gold-rule {
   background: linear-gradient(90deg, transparent, rgba(185, 150, 85, 0.72), transparent);
   height: 1px;
+}
+
+.atelier-noise::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.16;
+  background-image:
+    radial-gradient(circle at 20% 10%, rgba(255, 255, 255, 0.28) 0 1px, transparent 1px),
+    radial-gradient(circle at 80% 30%, rgba(238, 206, 248, 0.2) 0 1px, transparent 1px);
+  background-size: 42px 42px, 58px 58px;
+  mix-blend-mode: soft-light;
+}
+
+.gold-thread {
+  position: relative;
+}
+
+.gold-thread::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.65rem;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(185, 150, 85, 0), rgba(185, 150, 85, 0.92), rgba(238, 206, 248, 0));
+  transform-origin: left;
+  animation: thread-draw 1.35s ease-out both;
+}
+
+@keyframes thread-draw {
+  from {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+.petal-orbit {
+  animation: petal-orbit 13s ease-in-out infinite;
+}
+
+@keyframes petal-orbit {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) rotate(8deg);
+  }
+  50% {
+    transform: translate3d(18px, -22px, 0) rotate(32deg);
+  }
 }
 
 .masonry {

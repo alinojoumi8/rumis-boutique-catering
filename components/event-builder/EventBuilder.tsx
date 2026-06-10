@@ -357,7 +357,7 @@ function PackageStep({
               <div className="relative h-64">
                 <Image
                   src={imagePath(
-                    eventPackage.id === "high-tea" ? "/images/high-tea-detail.png" : "/images/cocktail-canapes.png"
+                    eventPackage.id === "high-tea" ? "/images/atelier-table.png" : "/images/cocktail-canapes.png"
                   )}
                   alt={`${eventPackage.name} placeholder catering image`}
                   fill
@@ -412,7 +412,7 @@ function MenuStep({
             >
               <div className="relative h-28">
                 <Image
-                  src={imagePath(packageId === "high-tea" ? "/images/high-tea-detail.png" : "/images/cocktail-canapes.png")}
+                  src={imagePath(packageId === "high-tea" ? "/images/atelier-table.png" : "/images/cocktail-canapes.png")}
                   alt={`${item.name} placeholder image`}
                   fill
                   sizes="(min-width: 1280px) 25vw, 50vw"
@@ -767,7 +767,7 @@ function EstimatePanel(props: {
 }) {
   return (
     <aside className="lg:sticky lg:top-28 lg:self-start">
-      <div className="overflow-hidden rounded-[8px] border border-gold/20 bg-plum text-white shadow-petal">
+      <div className="overflow-hidden rounded-[8px] border border-gold/30 bg-ink text-white shadow-petal">
         <div className="relative h-48 bg-[#4a2847]">
           <TeaScene className="absolute inset-0" />
         </div>

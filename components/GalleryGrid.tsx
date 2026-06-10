@@ -8,6 +8,8 @@ import { galleryCaptions } from "@/data/site";
 import { imagePath } from "@/lib/image-path";
 
 const imageCycle = [
+  imagePath("/images/atelier-table.png"),
+  imagePath("/images/atelier-hero.png"),
   imagePath("/images/high-tea-detail.png"),
   imagePath("/images/cocktail-canapes.png"),
   imagePath("/images/high-tea-hero.png")

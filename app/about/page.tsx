@@ -26,7 +26,7 @@ export default function AboutPage() {
           <Reveal delay={0.1}>
             <div className="relative aspect-[4/5] overflow-hidden rounded-[8px] shadow-petal">
               <Image
-                src={imagePath("/images/high-tea-hero.png")}
+                src={imagePath("/images/atelier-table.png")}
                 alt="High tea table with vintage china and flowers"
                 fill
                 sizes="(min-width: 768px) 50vw, 100vw"
@@ -38,20 +38,20 @@ export default function AboutPage() {
         </div>
       </Section>
 
-      <Section className="bg-lilac/45">
+      <Section className="bg-atelier text-white">
         <div className="grid gap-10 md:grid-cols-[1fr_0.75fr] md:items-center">
           <Reveal>
-            <p className="text-sm font-extrabold uppercase tracking-[0.16em] text-mulberry">Certified Tea Sommelier</p>
+            <p className="text-sm font-extrabold uppercase tracking-[0.16em] text-lilac">Certified Tea Sommelier</p>
             <h2 className="mt-4 font-serif text-5xl font-semibold leading-tight md:text-6xl">
               A more thoughtful way to serve tea.
             </h2>
-            <p className="mt-5 text-lg leading-8 text-plum/72">
+            <p className="mt-5 text-lg leading-8 text-white/72">
               Rumi's differentiator is a Certified Tea Sommelier who pairs teas to the menu. The result is a service that
               feels composed from the first savoury bite through the final pastry.
             </p>
           </Reveal>
           <Reveal delay={0.1}>
-            <div className="relative min-h-80 overflow-hidden rounded-[8px] border border-gold/20 bg-plum shadow-petal">
+            <div className="relative min-h-80 overflow-hidden rounded-[8px] border border-gold/30 bg-ink shadow-petal">
               <TeaScene className="absolute inset-0" />
             </div>
           </Reveal>

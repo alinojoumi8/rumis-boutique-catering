@@ -100,11 +100,12 @@ export default function TeaScene({ className = "" }: { className?: string }) {
   const reduced = Boolean(reducedMotion);
 
   return (
-    <div className={className} aria-hidden="true">
+    <div className={`${className} h-full w-full`} aria-hidden="true">
       <Canvas
         camera={{ position: [0, 0.8, 5.2], fov: 42 }}
         dpr={[1, 1.7]}
         frameloop={reduced ? "demand" : "always"}
+        style={{ height: "100%", width: "100%" }}
       >
         <ambientLight intensity={1.2} />
         <directionalLight position={[3, 4, 5]} intensity={2.1} />
