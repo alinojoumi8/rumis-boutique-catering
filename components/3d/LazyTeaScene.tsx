@@ -12,7 +12,7 @@ export default function LazyTeaScene({ className = "" }: { className?: string })
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
-    const timeout = window.setTimeout(() => setReady(true), 1200);
+    const timeout = window.setTimeout(() => setReady(true), 450);
     return () => window.clearTimeout(timeout);
   }, []);
 

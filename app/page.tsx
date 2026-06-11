@@ -14,19 +14,19 @@ export default function HomePage() {
     <main className="bg-ink text-white">
       <section className="atelier-noise relative min-h-screen overflow-hidden bg-atelier">
         <Image
-          src={imagePath("/images/atelier-hero.png")}
-          alt="Cinematic high tea table with porcelain tea cup, pastries, canapés, flowers, and gold details"
+          src={imagePath("/images/atelier-hero-3d-stage.png")}
+          alt="Cinematic high tea catering table with pastries, florals, candlelight, and space for an animated teacup"
           fill
           priority
           sizes="100vw"
           className="object-cover opacity-82"
         />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_40%,rgba(238,206,248,0.05),transparent_28%),linear-gradient(90deg,rgba(23,16,24,0.94)_0%,rgba(23,16,24,0.74)_42%,rgba(23,16,24,0.16)_100%)]" />
-        <div className="absolute left-[44%] top-[18%] hidden h-56 w-56 rounded-full border border-gold/25 md:block" />
-        <span className="petal-orbit absolute right-[22%] top-[22%] hidden size-5 rounded-full bg-lilac/80 blur-[1px] md:block" />
-        <span className="petal-orbit absolute right-[14%] top-[50%] hidden size-3 rounded-full bg-champagne/80 blur-[1px] [animation-delay:1.7s] md:block" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_68%_42%,rgba(238,206,248,0.12),transparent_24%),linear-gradient(90deg,rgba(23,16,24,0.95)_0%,rgba(23,16,24,0.76)_42%,rgba(23,16,24,0.34)_100%)]" />
+        <div className="absolute right-[11%] top-[18%] hidden h-[34rem] w-[34rem] rounded-full border border-gold/25 bg-white/[0.015] backdrop-blur-[1px] md:block" />
+        <span className="petal-orbit absolute right-[27%] top-[20%] hidden size-5 rounded-full bg-lilac/80 blur-[1px] md:block" />
+        <span className="petal-orbit absolute right-[10%] top-[49%] hidden size-3 rounded-full bg-champagne/80 blur-[1px] [animation-delay:1.7s] md:block" />
 
-        <div className="relative z-10 mx-auto grid min-h-screen max-w-7xl items-center gap-10 px-5 pb-24 pt-32 md:grid-cols-[0.88fr_0.72fr] md:px-8">
+        <div className="relative z-10 mx-auto grid min-h-screen max-w-7xl items-center gap-10 px-5 pb-24 pt-32 md:grid-cols-[0.78fr_0.82fr] md:px-8 lg:grid-cols-[0.88fr_0.72fr]">
           <FadeIn>
             <div className="flex items-center gap-3 text-sm font-extrabold text-champagne">
               <MapPin className="size-4" />
@@ -54,10 +54,10 @@ export default function HomePage() {
             </div>
           </FadeIn>
 
-          <FadeIn className="relative hidden min-h-[520px] md:block">
-            <div className="absolute inset-x-6 bottom-20 top-12 rounded-full border border-gold/25" />
+          <FadeIn className="relative min-h-[340px] sm:min-h-[420px] md:min-h-[600px]">
+            <div className="absolute inset-x-4 bottom-10 top-6 rounded-full border border-gold/25 bg-ink/10 shadow-[inset_0_0_80px_rgba(238,206,248,0.08)] md:inset-x-0 md:bottom-12 md:top-4" />
             <TeaScene className="absolute inset-0" />
-            <div className="absolute bottom-16 right-0 max-w-xs rounded-[8px] border border-white/12 bg-ink/72 p-5 shadow-petal backdrop-blur-md">
+            <div className="absolute bottom-8 left-4 max-w-xs rounded-[8px] border border-gold/28 bg-ink/90 p-5 shadow-petal backdrop-blur-md md:bottom-14 md:left-0">
               <p className="text-sm font-extrabold uppercase tracking-[0.16em] text-lilac">Sommelier pairing</p>
               <p className="mt-2 text-white/72">Three teas curated around the menu, service style, and sweets.</p>
             </div>
